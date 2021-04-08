@@ -49,8 +49,10 @@ Vue-devtools é outra ferramenta desenvolvida para facilitar o processo de desen
 
 Esta função dá ao desenvolvedor a capacidade de debugar a aplicação de maneira rápida e visual.
 
+Link para instalação do Vue DevTools : https://github.com/vuejs/vue-devtools#vue-devtools
+
 ## IDE e Extensões 
 
 Os editores de texto mais utilizados também proporcionam ferramentas para que a experiência de desenvolvimento com Vue seja a melhor possível, provendo syntax highlighting, snippets  e inteliSense. 
 
-A extensão mais utilizada para essa funcionalidade é chamada Vetur além da Vue Snippets ambas  utilizadas juntamente com o VSCode.
+Duas extensões úteis e populares: `Vetur` e  `Vue Snippets` ambas  utilizadas juntamente com o VSCode.
