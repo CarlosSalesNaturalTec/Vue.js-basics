@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="app">
+    <p>{{ message }}</p>
+    <p><button v-on:click="counter++">Click aqui para Counter =></button> {{ counter }} </p>
+
+  </div>
+
+  <hr>
+
+  <div id="app-2">
+    <h3 v-bind:title="message">
+      Pare o mouse sobre mim e veja a dica interligada dinamicamente!
+    </h3>
+  </div>
+  <hr>
+
+  <div id="app3">
+    <button v-on:click="seen=!seen">Exibir / Ocultar Texto utilizando diretiva: v-if </button>
+    <span v-if="seen">Texto</span>
+  </div>
+  <hr>
+
+  <div id="demo">
+    <button v-on:click="show = !show">Aplicar Fade com Transition =></button>
+    <transition name="fade">
+      <span v-if="show">Olá</span>
+    </transition>
+  </div>
+  <hr>
+
+  <div id="app4">
+    <p>Listas com diretiva: v-for</p>
+    <ol>
+      <li v-for="item in items">
+        {{ item.text }}
+      </li>
+    </ol>
+  </div>
+  <hr>
+
+  <div id="app5">
+    <button v-on:click="reverseMessage">Inverter mensagem utilizando métodos</button>
+    <p>{{message}}</p>
+  </div>
+  <hr>
+
+  <div id="app6">
+    <p>Diretiva: v-model</p>
+    <input type="text" v-model="message" placeholder="Digite sua mensagem aqui">
+    <p>Mensagem : {{message}}</p>
+  </div>
+
+  <script src="vue.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
