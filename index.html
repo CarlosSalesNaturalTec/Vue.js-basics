@@ -60,6 +60,18 @@
     <input type="text" v-model="message" placeholder="Digite sua mensagem aqui">
     <p>Mensagem : {{message}}</p>
   </div>
+  <hr>
+
+  <div id="app7">
+    Exemplo de Vue.Component:
+    <ol>
+      <todo-item
+      v-for="item in listaBasica"
+      v-bind:todo = "item"
+      v-bind:key = "item.id"
+      ></todo-item>
+    </ol>
+  </div>
 
   <script src="vue.js"></script>
   <script src="main.js"></script>

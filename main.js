@@ -56,3 +56,20 @@ var app = new Vue({
       message: ''
     }
   })
+
+  // Define um componente 
+  Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li> {{ todo.text }} </li>'
+  });
+
+  var app7 = new Vue({
+    el: '#app7',
+    data: {
+      listaBasica: [
+        {id: 0, text: 'Linha 1'},
+        {id: 1, text: 'Linha 2'}
+      ]
+    }
+  });
+
